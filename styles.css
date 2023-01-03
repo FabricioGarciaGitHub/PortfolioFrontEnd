@@ -1,0 +1,121 @@
+.style1{
+  background-color: #f2f2f2; 
+  font-size: 16px; font-family: Arial, sans-serif; 
+  border: 1px solid #cccccc; 
+  box-shadow: 0px 0px 5px #cccccc;  
+  padding: 20px;
+}
+
+.style2{
+  color: #333333;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #333333;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+  padding-bottom: 20px;
+}
+
+.style3{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+  padding: 20px;
+}
+
+.style4{
+  width: 150px;
+  height: 150px;
+}
+
+.style5{
+  margin-top: 10px;
+  text-decoration: underline 0.8px solid;
+}
+
+.barraProgreso{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333333;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+}
+
+.navbar{
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+  margin-bottom: 20px;
+}
+
+.parrafo{
+  padding-top: 20px;
+  text-decoration: underline 0.8px solid;
+}
+.parrafo2{
+  padding-right: 50px;
+}
+
+.general{
+  margin: 30px;
+}
+
+.sobreMi{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333333;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+}
+
+.fotoArgPrograBarraNav{
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+}
+
+.boton{
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+}
+
+.fotoFabri{
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+  max-width: 100%;
+  width: 150px;
+}
+
+h1{
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+#formulario{
+  display: none;
+}
+
+.iconoIdioma{
+  height: 50px;
+  width: 50px;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
+}
+
+.parrafoIdioma{
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  max-width: 90px;
+}
+body{
+  background-color: aliceblue;
+}
+.nombre{
+  text-shadow: 0.8px 0.8px rgb(103, 105, 235);
+}
+.cargo{
+  text-decoration: underline 0.8px solid;
+}
