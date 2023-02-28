@@ -1,0 +1,15 @@
+.navbar{
+    margin-top: 0.625rem;
+    justify-content: space-between;
+    font-style:italic;
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    border: 0.063rem solid #cccccc;
+    box-shadow: 0 0 0.313rem #cccccc;
+    margin-bottom: 0.625rem;
+}
+
+#btn-login{
+    margin-right: 0.5rem;
+  }

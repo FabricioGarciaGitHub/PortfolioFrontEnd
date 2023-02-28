@@ -1,0 +1,16 @@
+.formulario-contacto{
+    margin-left: 22%;
+    max-width: 50rem;
+    background-color: #ded8d8;
+    margin-top: 3rem;
+  }
+
+  .zz{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .boton-formulario-contacto{
+    margin: 0.5rem 0;
+  }
