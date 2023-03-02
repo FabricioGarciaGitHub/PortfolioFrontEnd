@@ -18,14 +18,14 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
-
+<!------------------------------------------------------------------------------------------------------>
      <!-- Invisible -->
      <div class="col-xxl-4 col-xl-4 col-md-4">
          <div class="style3 d-flex position-relative">
@@ -43,15 +43,15 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
-
+<!------------------------------------------------------------------------------------------------------>
      <!-- Creativa Consultores -->
      <div class="col-xxl-4 col-xl-4 col-md-4">
          <div class="style3 d-flex position-relative">
@@ -70,12 +70,76 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
  </section>
+
+ <!----------------------------------------------------------------------------------------------------->
+
+ <!-- Modal edicion campo experiencia-laboral -->
+<div class="modal fade" id="modal-editar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edita tus datos laborales</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-empresa">Ingresa el nombre de la empresa (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-empresa" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="inputfa-flip-horizontal">Ingresa tu rol laboral (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-rol" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-periodo">Ingresa la fecha de ingreso y egreso</label>
+          <input type="date" class="form-control" id="input-periodo">
+        </div>
+        <div class="form-group">
+          <label for="input-actividad">Describe la actividad realizada (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-actividad" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-herramientas">Describe las herramientas empleadas (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-herramientas" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal eliminar campo expLaboral -->
+<div class="modal fade" id="modal-eliminar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar experiencia laboral</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro desea eliminar esta experiencia laboral?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
