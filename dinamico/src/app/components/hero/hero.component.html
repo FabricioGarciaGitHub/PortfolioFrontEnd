@@ -1,66 +1,21 @@
 <!-- Hero -->
-<section class="d-flex row hero" id="hero">
-    <div class="col-6 position-relative fotoCargo">
-        <!-- Foto, nombre y cargo -->
-        <div class="col-6 position-relative">
-            <!-- Foto -->
-            <div>
-                <img class="rounded-circle fotoFabri" src="assets/images/foto-Fabri.jpg">
-            </div>
-            <div class="zz">
-                <!-- Boton lapiz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
-            </div>
-        </div>
-        <!-- Nombre y cargo -->
-        <div class="position-relative col-6">
-            <h1 class="nombre">Fabricio David García</h1>
-            <p>Full Stack Developer Jr.</p>
-            <div class="zz">
-                <!-- Boton lapiz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
-            </div>
-        </div>
+<section class="d-flex row hero">
+  <div class="col-6 position-relative fotoCargo">
+    <div class="fotoPerfilCargo">
+      <!-- Foto perfil -->
+      <app-foto-perfil></app-foto-perfil>
+
+      <!-- Nombre y cargo -->
+      <app-nombre-cargo></app-nombre-cargo>
     </div>
-    <!-- Sobre Mi -->
-    <div class="col-4 position-relative sobreMi">
-        <div class="col-12 d-flex position-relative">
-            <div>
-                <p>Sobre mi:</p>
-                <p>Tengo un perfil técnico con conocimientos de Testing de
-                    Software, Java, Java
-                    Script, Python, GIT, Angular,
-                    Data Entry, Desarrollo Web, Data Analyst, Fundamentos de Big Data, Scrum, SQL, Django,
-                    Postman,
-                    Bootstrap y
-                    Jira. Cuento con predisposición al aprendizaje, adaptabilidad laboral, perseverancia y
-                    compromiso.
-                    Busco una oportunidad para insertarme como Analista QA, Tester de Software o Programador Jr
-                    y crecer
-                    en
-                    esa
-                    área.
-                    Estoy enfocado en aprender y crecer como profesional dando lo máximo para lograr los
-                    objetivos. Soy
-                    flexible y
-                    aprendo rápido las nuevas tecnologías.</p>
-            </div>
-            <div class="zz">
-                <!-- Boton lapiz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
-            </div>
-        </div>
+  </div>
+   <!-- Sobre Mi -->
+   <div class="col-4 sobreMi">
+    <div class="col-12 d-flex position-absolute">
+      <app-sobre-mi></app-sobre-mi>
     </div>
+  </div>
 </section>
+
+
+

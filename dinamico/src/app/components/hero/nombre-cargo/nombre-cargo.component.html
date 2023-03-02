@@ -1,0 +1,120 @@
+<!-- Nombre y cargo -->
+<div class="position-relative col-6">
+  <h1 class="nombre">Fabricio David García</h1>
+  <p>Full Stack Developer Jr.</p>
+  <div class="zz">
+    <!-- Boton lapiz -->
+    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+      data-bs-target="#modal-editar-nombre-cargo"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <!-- Boton cruz -->
+    <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-borrar-nombre-cargo"><i
+        class="fa fa-times" aria-hidden="true"></i></button>
+  </div>
+</div>
+
+<!-- Modal edicion nombre y cargo -->
+<div class="modal fade" id="modal-editar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edita tus datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-cargo">Ingresa tu nombre completo (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-cargo" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-cargo">Ingresa tu cargo laboral (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-cargo" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal eliminar nombre y cargo -->
+<div class="modal fade" id="modal-borrar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de nombre y cargo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro deseas eliminar el contenido de nombre y cargo?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="modal-editar-nombre-cargo" tabindex="-1" role="dialog" aria-labelledby="#modal-editar-nombre-cargo">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-editar-nombre-cargo">Edición</h4>
+        <button type="button" class="close" data-dismiss="#modal-editar-nombre-cargo" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="nombre-completo">Nombre completo:</label>
+            <input type="text" class="form-control" id="nombre-completo">
+          </div>
+          <div class="form-group">
+            <label for="cargo-laboral">Cargo laboral:</label>
+            <input type="text" class="form-control" id="cargo-laboral">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="#modal-editar-nombre-cargo">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="modal-editar-nombre-cargo">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+

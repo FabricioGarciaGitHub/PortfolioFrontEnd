@@ -19,6 +19,9 @@ import { FormContactoComponent } from './components/form-contacto/form-contacto.
 import { FooterComponent } from './components/footer/footer.component';
 import { ModalesComponent } from './components/modales/modales.component';
 import { FormsModule } from '@angular/forms';
+import { FotoPerfilComponent } from './components/hero/foto-perfil/foto-perfil.component';
+import { NombreCargoComponent } from './components/hero/nombre-cargo/nombre-cargo.component';
+import { SobreMiComponent } from './components/hero/sobre-mi/sobre-mi.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { FormsModule } from '@angular/forms';
     FormContactoComponent,
     FooterComponent,
     ModalesComponent,
+    FotoPerfilComponent,
+    NombreCargoComponent,
+    SobreMiComponent,
   ],
   imports: [
     BrowserModule,

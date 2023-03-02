@@ -13,12 +13,68 @@
             </div>
             <div class="zz">
                 <!-- Boton lapiz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-editar-contacto"><i
                         class="fa fa-pencil" aria-hidden="true"></i></button>
                 <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-contacto"><i
                         class="fa fa-times" aria-hidden="true"></i></button>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal edicion campo contacto -->
+<div class="modal fade" id="modal-editar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-email">Ingresa tu Email (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-email" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-linedIn">Ingresa tu link de LinkedIn (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-LinkeIn" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-telefono">Ingresa tu Número de teléfono (formato internacional)</label>
+          <input type="tel" class="form-control" id="input-telefono" placeholder="Ingresa tu número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="input-LinkeIn">
+        </div>
+        <div class="form-group">
+          <label for="input-github">Ingresa tu link de Git-Hub (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-githubIn" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal eliminar campo contacto -->
+<div class="modal fade" id="modal-eliminar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar tus medios de contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro desea eliminar tus edios de contacto?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>

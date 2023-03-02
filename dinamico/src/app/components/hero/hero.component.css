@@ -4,32 +4,19 @@
     background-size: 100%;
   }
 
-  .fotoCargo{
-    margin-left: 3rem;
-  }
-
-  .fotoFabri{
-    border: 0.063rem solid #cccccc;
-    box-shadow: 0 0 0.313rem #cccccc;
-    width: 12rem;
-  }
-
-  .sobreMi{
-    background-repeat: no-repeat;
-    padding: 1.25rem 0;
-    border: 0.063rem solid #cccccc;
-    box-shadow: 0 0 0.313rem #cccccc;
-    padding-left: 1.25rem;
-    margin: 0.625rem 0;
-    background-color: antiquewhite;
-  }
-
   .zz{
     position: absolute;
     top: 0;
     right: 0;
   }
 
-  .nombre{
-    text-shadow: 0.05rem 0.05rem rgb(0.625rem3, 0.625rem5, 235);
+  .sobreMi{
+    padding-bottom: 23rem;
+
   }
+
+  .fotoPerfilCargo{
+    margin-left: 6rem;
+  }
+
+

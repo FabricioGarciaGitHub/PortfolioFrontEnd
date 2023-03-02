@@ -1,10 +1,6 @@
-#banner{
-    border: 0.063rem solid #cccccc;
-    box-shadow: 0 0 0.313rem #cccccc;
-  }
-
-  .zz{
+.zz{
     position: absolute;
     top: 0;
     right: 0;
+    margin-right: 1vh;
   }

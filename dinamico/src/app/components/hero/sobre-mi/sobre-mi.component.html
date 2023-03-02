@@ -1,0 +1,78 @@
+
+<!-- Sobre mi -->
+<div class="col-4 position-relative sobreMi">
+  <div class="col-12 d-flex position-relative">
+    <div>
+      <p>Sobre mi:</p>
+      <p>Tengo un perfil técnico con conocimientos de Testing de
+        Software, Java, Java
+        Script, Python, GIT, Angular,
+        Data Entry, Desarrollo Web, Data Analyst, Fundamentos de Big Data, Scrum, SQL, Django,
+        Postman,
+        Bootstrap y
+        Jira. Cuento con predisposición al aprendizaje, adaptabilidad laboral, perseverancia y
+        compromiso.
+        Busco una oportunidad para insertarme como Analista QA, Tester de Software o Programador Jr
+        y crecer
+        en
+        esa
+        área.
+        Estoy enfocado en aprender y crecer como profesional dando lo máximo para lograr los
+        objetivos. Soy
+        flexible y
+        aprendo rápido las nuevas tecnologías.</p>
+    </div>
+    <div class="zz">
+      <!-- Boton lapiz -->
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-editar-sobre-mi"><i
+          class="fa fa-pencil" aria-hidden="true"></i></button>
+      <!-- Boton cruz -->
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-sobre-mi"><i
+          class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal edicion campo Sobre Mí -->
+<div class="modal fade" id="modal-editar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edita el campo "Sobre Mí"</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-hero">Ingresa un resumen sobre tí (máximo 250 caracteres)</label>
+          <textarea class="form-control" id="input-hero" maxlength="250"></textarea>
+          <small class="form-text text-muted"><span id="counter">250</span> caracteres restantes</small>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal eliminar campo Sobre Mí -->
+<div class="modal fade" id="modal-eliminar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de resumen</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro deseas eliminar el contenido del campo "Sobre Mí"?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
