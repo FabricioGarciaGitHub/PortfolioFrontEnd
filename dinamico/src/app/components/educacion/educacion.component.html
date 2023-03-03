@@ -14,14 +14,15 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
 
+     <!------------------------------------------------------------------------------------------------------------------->
 
      <!-- EGG Education estudio -->
      <div class="col-xxl-4 col-xl-4 col-md-4">
@@ -36,14 +37,16 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
+
+<!------------------------------------------------------------------------------------------------------------------->
 
      <!-- Universidad de Chubut estudio -->
      <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
@@ -58,14 +61,16 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-liminar-educacion"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
+
+<!------------------------------------------------------------------------------------------------------------------->
 
      <!-- Argentina programa primera etapa -->
      <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
@@ -80,14 +85,16 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
+
+<!------------------------------------------------------------------------------------------------------------------->
 
      <!-- Programacion codo a codo -->
      <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
@@ -101,14 +108,16 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
+
+<!------------------------------------------------------------------------------------------------------------------->
 
      <!-- Argentina Programa segunda etapa -->
      <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
@@ -123,12 +132,70 @@
              <div class="zz">
                  <!-- Boton lapiz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
                  <!-- Boton cruz -->
                  <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times" aria-hidden="true"></i></button>
              </div>
          </div>
      </div>
  </section>
+
+ <!------------------------------------------------------------------------------------------------------------------->
+
+<!-- Modal edicion campo educacion -->
+<div class="modal fade" id="modal-edicion-educacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de educacion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-foto">Selecciona una imagen</label>
+          <input type="file" class="form-control" id="input-foto">
+        </div>
+        <div class="form-group">
+          <label for="input-establecimiento">Ingresa el nombre del establecimiento o entidad (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-estudio">Ingresa el estudio y las horas de reloj</label>
+          <input type="text" class="form-control" id="input-estudio">
+        </div>
+        <div class="form-group">
+          <label for="input-fecha">Ingresa la fecha de finalización</label>
+          <input type="date" class="form-control" id="input-fecha" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal eliminar campo educacion -->
+<div class="modal fade" id="modal-eliminar-educacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar tu estudio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro desea eliminar este estudio?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
