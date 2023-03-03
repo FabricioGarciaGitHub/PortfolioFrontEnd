@@ -30,7 +30,16 @@
                     </svg>
                 </a>
             </li>
-            <button type="button" id="btn-login" class="btn btn-primary btn-lg">Login</button>
+            <div class="btn-group dropstart">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Iniciar sesión</button></li>
+                <li class="dropdown-divider"></li>
+                <li><button class="dropdown-item" type="button">Registrarse</button></li>
+              </ul>
+            </div>
         </ul>
     </div>
 </nav>
