@@ -196,8 +196,12 @@ body{
   margin-right: 0.5rem;
 }
 
-#btn-login{
+.btn-login{
   margin-right: 0.5rem;
+}
+
+#icono-ajuste-banner{
+  margin-right: 0.3rem;
 }
 
 .zz{
@@ -209,6 +213,7 @@ body{
 .qr{
   margin-top: 2rem;
   margin-left: 42%;
+  max-width: 200px;
 }
 
 .formulario-contacto{
