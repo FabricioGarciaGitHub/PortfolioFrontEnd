@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Fabricio García">
+    <meta name="description" content="| Proyecto Portfolio Web |">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, REACT, TYPESCRIPT, SQL">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Feature-Policy" content="ch-viewport-width *">
+
+    <!-- Titulo -->
+    <title>Fabricio García | Desarrollo Portfolio Web</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/t-rex.png">
+
+    <!-- Estilos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5d179d390c.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="general">
+
+        <!-- Header (Logo Arg Prog, redes sociales y boton login) -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href=""><img src="assets/images/logo-Arg-Prog.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mr-4">
+                    <li class="nav-link">
+                        <a href="https://linkedin.com">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 1.14614C0 0.513313 0.526012 0 1.17491 0H14.8251C15.474 0 16 0.513315 16 1.14614V14.8539C16 15.4869 15.474 16 14.8251 16L1.17491 16C0.526012 16 0 15.4869 0 14.8539V1.14614ZM4.94338 13.3937V6.16876H2.54196V13.3937H4.94338ZM3.74266 5.18232C4.58008 5.18232 5.10131 4.62753 5.10131 3.9342C5.0857 3.22527 4.58008 2.68587 3.75854 2.68587C2.93709 2.68587 2.4 3.22527 2.4 3.9342C2.4 4.62753 2.92112 5.18232 3.72701 5.18232H3.74266ZM8.6514 13.3937V9.35897C8.6514 9.14304 8.667 8.92732 8.73042 8.77296C8.90401 8.34153 9.29915 7.89471 9.96255 7.89471C10.8315 7.89471 11.1791 8.55725 11.1791 9.52851V13.3937H13.5803V9.251C13.5803 7.03184 12.3956 5.99922 10.8156 5.99922C9.54177 5.99922 8.9706 6.69937 8.65146 7.19167V7.21656H8.63543C8.6407 7.20832 8.64605 7.20003 8.65146 7.19167V6.16876H6.25007C6.28158 6.8467 6.25007 13.3937 6.25007 13.3937H8.6514Z"
+                                    fill="black"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://facebook.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-facebook"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                </path>
+                                <a href="https://fabebook.com"></a>
+                            </svg>
+                        </a>
+                    </li>
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn btn-primary dropdown-toggle btn-login"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Iniciar sesión</button></li>
+                            <li class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" type="button">Registrarse</button></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="d-flex position-relative">
+
+            <div><img id="banner" class="w-100" src="assets/images/banner.png" alt="Banner">
+            </div>
+
+            <div class="zz row flex-column" id="icono-ajuste-banner">
+
+                <!-- Boton editar banner -->
+                <button type="button" class="btn col-6" data-bs-toggle="modal" data-bs-target="#cambio-banner-modal">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+
+                <!-- Boton eliminar banner -->
+                <button type="button" class="btn col-6" data-bs-toggle="modal" data-bs-target="#modal-borrar-banner">
+                    <i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light d-flex justify-content-center">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav">
+                        <li class="nav-link">
+                            <a href="#" class="nav-link decorador-texto">Inicio</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#hero" class="nav-link decorador-texto">Sobre mi</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#contacto" class="nav-link decorador-texto">Contacto</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#Experiencia-laboral" class="nav-link decorador-texto">Experiencia laboral</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#idiomas" class="nav-link decorador-texto">Idiomas</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#educacion" class="nav-link decorador-texto">Educación</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#habilidades" class="nav-link decorador-texto">Habilidades</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#proyectos" class="nav-link decorador-texto">Proyectos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="d-flex row hero">
+            <div class="col-6 fotoCargo">
+                <div class="fotoPerfilCargo">
+                    <!-- Foto perfil -->
+                    <div class="col-6 position-relative" id="hero">
+                        <div>
+                            <img class="rounded-circle fotoFabri" src="assets/images/foto-Fabri.jpg">
+                        </div>
+
+                        <div class="zz flex-column">
+                            <!-- Boton edicion foto perfil -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-foto-perfil"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton eliminar foto perfil -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-borrar-foto-perfil"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Nombre y cargo -->
+                    <div class="position-relative col-6">
+                        <h1 class="nombre">Fabricio David García</h1>
+                        <p>Full Stack Developer Jr.</p>
+                        <div class="zz">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-editar-nombre-cargo"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-borrar-nombre-cargo"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre mi -->
+            <div class="col-4 sobreMi position-relative">
+                <p>Sobre mi:</p>
+                <p>Tengo un perfil técnico con conocimientos de Testing de
+                    Software, Java, Java
+                    Script, Python, GIT, Angular,
+                    Data Entry, Desarrollo Web, Data Analyst, Fundamentos de Big Data, Scrum, SQL, Django,
+                    Postman,
+                    Bootstrap y
+                    Jira. Cuento con predisposición al aprendizaje, adaptabilidad laboral, perseverancia y
+                    compromiso.
+                    Busco una oportunidad para insertarme como Analista QA, Tester de Software o Programador
+                    Jr
+                    y crecer
+                    en
+                    esa
+                    área.
+                    Estoy enfocado en aprender y crecer como profesional dando lo máximo para lograr los
+                    objetivos. Soy
+                    flexible y
+                    aprendo rápido las nuevas tecnologías.</p>
+                <div class="zz">
+                    <!-- Boton lapiz -->
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#modal-editar-sobre-mi"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <!-- Boton cruz -->
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#modal-eliminar-sobre-mi"><i class="fa fa-times"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <h1 id="contacto">Contacto:</h1>
+        <section class="d-flex row">
+            <div class="col-xxl-12 col-xl-12 col-md-12">
+                <div class="style3 d-flex position-relative">
+                    <div>
+                        <p><b>Email: </b> <a href="mailto:fabriterciariourquiza@gmail.com"
+                                class="style5">fabriterciariourquiza@gmail.com</a></p>
+                        <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/fabricio-garcia-tester"
+                                class="style5">www.linkedin.com/in/fabricio-garcia-tester</a></p>
+                        <p><b>Celular: </b><a href="tel:+5493416210853" class="style5">+54 9 3416210853</a></p>
+                        <p><b>Git Hub: </b><a href="https://www.github.com/FabricioGarciaGitHub?tab=repositories"
+                                class="style5">www.github.com/FabricioGarciaGitHub?tab=repositories</a></p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-editar-contacto"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-contacto"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia laboral -->
+        <h1 class="container-fluid" id="Experiencia-laboral">Experiencia laboral:</h1>
+        <section class="d-flex row contenidoExpLaboral">
+
+            <!-- Tork -->
+            <div class="col-xxl-4 col-xl-4 col-md-4">
+                <div class="style3 d-flex position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Tork.png" alt="Logo de Tork">
+                        <p class="style5"><b>Empresa:</b> Tork SA.</p>
+                        <p><b>Rol:</b> Data Entry.</p>
+                        <p><b>Período:</b> Abr-2021/Jul-2021.</p>
+                        <p><b>Actividad:</b></p>
+                        <p>Ingreso, modificación y mantenimiento de datos en la base de datos. Data Science.
+                            Análisis y extracción de información relevante de la web y su ingreso en la base
+                            de datos.</p>
+                        <p><b>Herramientas:</b> Itris y Excel.</p> <br>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invisible -->
+            <div class="col-xxl-4 col-xl-4 col-md-4">
+                <div class="style3 d-flex position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Invisible.png" alt="Logo de Invisible">
+                        <p class="style5"><b>Empresa:</b> Invisible SA.</p>
+                        <p><b>Rol:</b> Agente de Recopilación y verificación de datos.</p>
+                        <p><b>Período:</b> Ago-2021/Oct-2021.</p>
+                        <p><b>Actividad:</b></p>
+                        <p>Agente de recopilación y verificación de datos desde la web. Ingreso de
+                            datos al
+                            sistema.</p>
+                        <p><b>Herramientas:</b> Flow, Slack, GoogleSheets.</p> <br><br><br>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creativa Consultores -->
+            <div class="col-xxl-4 col-xl-4 col-md-4">
+                <div class="style3 d-flex position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Creativa-Consultores.png"
+                            alt="Logo de Creativa Consultores">
+                        <p class="style5"><b>Empresa:</b> Creativa Consultores SA.</p>
+                        <p><b>Rol:</b> Analista QA.</p>
+                        <p><b>Período:</b> Nov-2021/Ene-2022.</p>
+                        <p><b>Actividad:</b></p>
+                        <p>Pasantía como Analista QA. Crear, diseñar y ejecutar Test Cases y Test
+                            Suite.
+                            Reporte de bugs. Redacción de estrategias de pruebas. Plan de pruebas.</p>
+                        <p><b>Herramientas:</b> Microsoft Word, TestLink y Excel.</p><br><br>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Educacion -->
+        <h1 class="container-fluid" id="educacion">Educación:</h1>
+        <section class="d-flex row">
+
+            <!-- Titulo electromecanico -->
+            <div class="col-xxl-4 col-xl-4 col-md-4">
+                <div class="style3 d-flex zz position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Escuela.jfif" alt="Titulo tecnico electromecanico">
+                        <p class="style5">E.E.T.n° 471 - Rodolfo Rivarola n°10</p>
+                        <p>Técnico electromecánico</p>
+                        <p><b>Período:</b> 2011 - 2008</p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EGG Education estudio -->
+            <div class="col-xxl-4 col-xl-4 col-md-4">
+                <div class="style3 d-flex zz position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Egg-Education.jfif"
+                            alt="Certificado curso EGG education">
+                        <p class="style5">EGG Education</p>
+                        <p>Programación desde cero - 80hs reloj</p>
+                        <p><b>Período:</b> Abr-2022 - Jun-2022</p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Universidad de Chubut estudio -->
+            <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
+                <div class="style3 d-flex zz position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-universidad-Chubut.png"
+                            alt="Certificado curso Universidad de Chubut">
+                        <p class="style5"> Universidad de Chubut</p>
+                        <p>Programación Web Services - 96hs reloj</p>
+                        <p><b>Período:</b> Mar-2022 - Ago-2022</p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-liminar-educacion"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Argentina programa primera etapa -->
+            <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
+                <div class="style3 d-flex zz position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Arg-Prog.png"
+                            alt="Certificado curso Argentina programa primera etapa">
+                        <p class="style5">Argentina Programa primera etapa</p>
+                        <p>Fundamentos básicos de la programación - 60hs reloj</p>
+                        <p><b>Período:</b> Jul-2022 - Sep-2022</p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programacion codo a codo -->
+            <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
+                <div class="style3 d-flex zz position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-CodoACodo.jfif" alt="Certificado curso Codo a Codo">
+                        <p class="style5">Programación Codo a Codo</p>
+                        <p>Fundamentos básicos de la programación - 60hs reloj</p>
+                        <p><b>Período:</b> Ago-2022 - Nov-2022</p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Argentina Programa segunda etapa -->
+            <div class="col-xxl-4 col-xl-4 col-md-4 position-relative">
+                <div class="style3 d-flex zz position-relative">
+                    <div>
+                        <img class="style4" src="assets/images/logo-Arg-Prog.png"
+                            alt="Certificado curso Argentina programa segunda etapa">
+                        <p class="style5">Argentina Programa segunda etapa</p>
+                        <p>Programación Web Full Stack - 480hs reloj</p>
+                        <p><b>Período:</b> Ago-2022 - Nov-2022</p>
+                    </div>
+                    <div class="zz">
+                        <!-- Boton lapiz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+
+                        <!-- Boton cruz -->
+                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra de progreso -->
+        <h1 class="container-fluid" id="habilidades">Hard and Soft skills:</h1>
+        <section class="container-fluid barraProgreso position-relative">
+            <div class="d-flex">
+                <div class="row">
+                    <div class="d-flex position-relative">
+                        <div class="col-sm-12">
+                            <h3>HTML5</h3>
+                            <div class="progress">
+                                <div class="progress-bar html-progress bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">75%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zz position-absolute">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex position-relative">
+                        <div class="col-sm-12">
+                            <h3>CSS3</h3>
+                            <div class="progress">
+                                <div class="progress-bar css-progress bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                                    aria-valuemax="100">65%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zz position-absolute">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="col-sm-12">
+                            <h3>JavaScript</h3>
+                            <div class="progress">
+                                <div class="progress-bar js-progress bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
+                                    aria-valuemax="100">45%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zz position-absolute">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="col-sm-12">
+                            <h3>GIT</h3>
+                            <div class="progress">
+                                <div class="progress-bar html-progress bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 65%;" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">65%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zz position-absolute">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="col-sm-12">
+                            <h3>Angular</h3>
+                            <div class="progress">
+                                <div class="progress-bar html-progress bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 55%;" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">55%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zz position-absolute">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="col-sm-12">
+                            <h3>MySQL</h3>
+                            <div class="progress">
+                                <div class="progress-bar html-progress bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 65%;" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">65%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zz position-absolute">
+                            <!-- Boton lapiz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button>
+                            <!-- Boton cruz -->
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Idiomas -->
+        <h1 class="container-fluid" id="idiomas">Idiomas:</h1>
+        <section class="d-flex contenidoIdiomas">
+            <div class="col-xxl-4 col-xl-4 col-md-4 d-flex position-relative">
+                <div class="style3">
+                    <img src="assets/images/logo-ingles.png" alt="Icono del idioma inglés" class="iconoIdioma">
+                    <p class="parrafoIdioma"><b class="style5">Inglés:</b> Nivel intermedio.</p>
+                    <p>Puedo entender y participar en conversaciones simples y tengo buena comprensión de lectura y
+                        escritura.</p>
+                </div>
+                <div class="zz">
+                    <!-- Boton lapiz -->
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#modal-edicion-idiomas"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <!-- Boton cruz -->
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#modal-eliminar-idioma"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <h1 class="container-fluid" id="proyectos">Proyectos:</h1>
+        <section class="d-flex">
+            <div class="col-xxl-4 col-xl-4 col-md-4 d-flex position-relative">
+                <div class="style3 col-12">
+                    <img src="assets/images/logo-Arg-Prog.png" alt="Logo de Argentina Programa" class="style4">
+                    <p class="parrafoIdioma">Programación Web Full Stack - 480hs reloj.</p>
+                    <p><b>Período:</b> Ago-2022 - Nov-2022</p>
+                </div>
+                <div class="zz">
+                    <!-- Boton lapiz -->
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#modal-edicion-proyecto"><i class="fa fa-pencil"
+                            aria-hidden="true"></i></button>
+                    <!-- Boton cruz -->
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#modal-eliminar-proyecto"><i class="fa fa-times"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- QR -->
+        <h1 id="escaneame">Escanéame!</h1>
+        <section class="qr d-flex position-relative text-center">
+            <div>
+                <img class="img-fluid" src="../../../assets/images/qrcode_www.linkedin.com.png"
+                    alt="QR de mi currículum vitae">
+            </div>
+            <div class="zz">
+                <!-- Boton lapiz -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-edicion-qr"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <!-- Boton cruz -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-eliminar-qr"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+        </section>
+
+
+        <!-- Formulario contacto -->
+        <div class="container-fluid formulario-contacto position-relative">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset class="fieldset">
+                        <legend class="header-form">Contacto</legend>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"
+                                    aria-hidden="true"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"
+                                    aria-hidden="true"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"
+                                    aria-hidden="true"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"
+                                    aria-hidden="true"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Celular" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"
+                                    aria-hidden="true"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Introduzca su masaje aquí. Me pondré en contacto con usted dentro de 2 días hábiles."
+                                    rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit"
+                                    class="btn btn-primary btn-lg boton-formulario-contacto">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="zz">
+                <!-- Boton cruz -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-eliminar-formContacto"><i class="fa fa-times"
+                        aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <!-- Foother -->
+        <footer class="d-flex justify-content-center position-relative">
+            <div class="logo">
+                <br> <br>
+                <p class="font-italic">Todos los derechos reservados.© <b>Fabricio García</b></p>
+            </div>
+            <div class="zz">
+                <!-- Boton lapiz -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-edicion-foother"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <!-- Boton cruz -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-eliminar-foother"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-------------------------------------M O D A L E S---------------------------------------------------->
+
+    <!-- Modal eliminar banner -->
+    <div class="modal fade" id="modal-borrar-banner" tabindex="-1" aria-labelledby="modal-borrar-banner-label"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-borrar-banner-label">Eliminar banner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro que deseas eliminar el banner?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="eliminar-banner-btn">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion banner -->
+    <div class="modal fade" id="cambio-banner-modal" tabindex="-1" aria-labelledby="cambio-banner-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cambio-banner-modal-label">Cambiar banner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="banner-input">Selecciona un archivo de imagen:</label>
+                        <input type="file" class="form-control-file" id="banner-input">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="guardar-cambios-btn">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo contacto -->
+    <div class="modal fade" id="modal-editar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-email">Ingresa tu Email (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-email" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-linedIn">Ingresa tu link de LinkedIn (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-LinkeIn" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-telefono">Ingresa tu Número de teléfono (formato internacional)</label>
+                        <input type="tel" class="form-control" id="input-telefono"
+                            placeholder="Ingresa tu número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-github">Ingresa tu link de Git-Hub (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-github" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo contacto -->
+    <div class="modal fade" id="modal-eliminar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tus medios de contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar tus medios de contacto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo experiencia-laboral -->
+    <div class="modal fade" id="modal-editar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos laborales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-empresa">Ingresa el nombre de la empresa (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-empresa" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputfa-flip-horizontal">Ingresa tu rol laboral (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-rol" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-periodo">Ingresa la fecha de ingreso y egreso</label>
+                        <input type="date" class="form-control" id="input-periodo">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-actividad">Describe la actividad realizada (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-actividad" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-herramientas">Describe las herramientas empleadas (máximo 50
+                            caracteres)</label>
+                        <input type="text" class="form-control" id="input-herramientas" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo expLaboral -->
+    <div class="modal fade" id="modal-eliminar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar experiencia laboral</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar esta experiencia laboral?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo educacion -->
+    <div class="modal fade" id="modal-edicion-educacion" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de educacion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-foto">Selecciona una imagen</label>
+                        <input type="file" class="form-control" id="input-foto">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-establecimiento">Ingresa el nombre del establecimiento o entidad (máximo
+                            50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-estudio">Ingresa el estudio y las horas de reloj</label>
+                        <input type="text" class="form-control" id="input-estudio">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-fecha">Ingresa la fecha de finalización</label>
+                        <input type="date" class="form-control" id="input-fecha" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo educacion -->
+    <div class="modal fade" id="modal-eliminar-educacion" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tu estudio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar este estudio?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo progress-bar -->
+    <div class="modal fade" id="modal-edicion-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tu barra de progreso de habilidades</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-habilidad">Ingresa el nombre de la habilidad (máximo 50
+                            caracteres)</label>
+                        <input type="text" class="form-control" id="input-habilidad" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-porcentaje">Ingresa el porcentaje de conocimiento de la habilidad</label>
+                        <input type="number" class="form-control" id="input-porcentaje">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo progress-bar -->
+    <div class="modal fade" id="modal-eliminar-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar barra de progreso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar esta barra de progreso?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edición campo idiomas -->
+    <div class="modal fade" id="modal-edicion-idiomas" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de educacion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-foto">Selecciona una imagen</label>
+                        <input type="file" class="form-control" id="input-foto">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-idioma">Ingresa el idioma (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-idioma" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-nivel">Ingresa el nivel</label>
+                        <input type="text" class="form-control" id="input-nivel" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-descripcion">Ingresa una breve descripción de tu comprensión del
+                            idioma</label>
+                        <input type="text" class="form-control" id="input-descripcion" maxlength="100">
+                        <small class="form-text text-muted"><span id="counter">100</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo educacion -->
+    <div class="modal fade" id="modal-eliminar-idioma" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar idioma</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar este idioma?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo proyectos -->
+    <div class="modal fade" id="modal-edicion-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tu proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-foto">Selecciona una imagen</label>
+                        <input type="file" class="form-control" id="input-foto">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-establecimiento">Ingresa el nombre del proyecto (máximo 50
+                            caracteres)</label>
+                        <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-estudio">Ingresa el titulo de tu proyecto y las horas de reloj</label>
+                        <input type="text" class="form-control" id="input-estudio" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-fecha">Ingresa la fecha de finalización</label>
+                        <input type="date" class="form-control" id="input-fecha" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo proyectos -->
+    <div class="modal fade" id="modal-eliminar-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tu proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar este proyecto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo QR -->
+    <div class="modal fade" id="modal-edicion-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tu QR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-qr">Selecciona una imagen de QR</label>
+                        <input type="file" class="form-control" id="input-qr">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo QR -->
+    <div class="modal fade" id="modal-eliminar-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar QR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar el QR?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo footer -->
+    <div class="modal fade" id="modal-edicion-foother" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tu Foother</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-foother">Ingresa el contenido del Foother (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-foother" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo footer -->
+    <div class="modal fade" id="modal-eliminar-foother" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tu Foother</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar el Foother?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo formulario de contacto -->
+    <div class="modal fade" id="modal-eliminar-formContacto" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar formulario de contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro desea eliminar el formulario de contacto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion -->
+    <div class="modal fade" id="modal-edicion-foto-perfil" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cambia tu foto de perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="banner-input">Selecciona un archivo de imagen:</label>
+                        <input type="file" class="form-control-file" id="banner-input">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal borrar -->
+    <div class="modal fade" id="modal-borrar-foto-perfil" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar foto de perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro que deseas eliminar la foto de perfil?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion nombre y cargo -->
+    <div class="modal fade" id="modal-editar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-cargo">Ingresa tu nombre completo (máximo 50
+                            caracteres)</label>
+                        <input type="text" class="form-control" id="input-cargo" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-cargo">Ingresa tu cargo laboral (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-cargo" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar nombre y cargo -->
+    <div class="modal fade" id="modal-borrar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de nombre y cargo
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro deseas eliminar el contenido de nombre y cargo?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal edicion campo Sobre Mí -->
+    <div class="modal fade" id="modal-editar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edita el campo "Sobre Mí"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-hero">Ingresa un resumen sobre tí (máximo 250
+                            caracteres)</label>
+                        <textarea class="form-control" id="input-hero" maxlength="250"></textarea>
+                        <small class="form-text text-muted"><span id="counter">250</span> caracteres
+                            restantes</small>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar campo Sobre Mí -->
+    <div class="modal fade" id="modal-eliminar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de resumen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro deseas eliminar el contenido del campo "Sobre Mí"?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Script FontAwesome -->
+    <script src="https://kit.fontawesome.com/5d179d390c.js" crossorigin="anonymous"></script>
+</body>
+</html>
