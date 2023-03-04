@@ -1,37 +1,49 @@
-.expLaboral{
-  color: #333333;
-  font-size: 1.375rem;
-  background-color: #333333;
-  border: 0.063rem solid #cccccc;
-  box-shadow: 0 0 0.313rem #cccccc;
-  padding-bottom: 1.2rem;
-}
-
-.contacto{
-  color: #333333;
-  font-size: 1.375rem;
-  background-color: #333333;
-  border: 0.063rem solid #cccccc;
-  box-shadow: 0 0 0.313rem #cccccc;
-  padding-bottom: 1.2rem;
-  margin: 0 1rem 0.5rem;
-}
-
-.contenidoExpLaboral{
-  margin-bottom: 0.5rem;
+#contacto{
+    color: #333333;
+    font-size: 1.375rem;
+    background-color: #162bb7fa;
+    border: 0.063rem solid #cccccc;
+    box-shadow: 0 0 0.313rem #cccccc;
+    padding-bottom: 1.2rem;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
 }
 
 .contenidoProyectos{
   margin-left: -1rem;
 }
 
-.educacion{
+#habilidades{
   color: #333333;
   font-size: 1.375rem;
-  background-color: #333333;
+  background-color: #162bb7fa;
   border: 0.063rem solid #cccccc;
   box-shadow: 0 0 0.313rem #cccccc;
   padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+}
+
+#Experiencia-laboral{
+  color: #333333;
+  font-size: 1.375rem;
+  background-color: #162bb7fa;
+  border: 0.063rem solid #cccccc;
+  box-shadow: 0 0 0.313rem #cccccc;
+  padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+}
+
+#educacion{
+  color: #333333;
+  font-size: 1.375rem;
+  background-color: #162bb7fa;
+  border: 0.063rem solid #cccccc;
+  box-shadow: 0 0 0.313rem #cccccc;
+  padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
 }
 
 .barraProgreso{
@@ -45,26 +57,26 @@
   margin-bottom: 0.5rem;
 }
 
-.idiomas{
+#idiomas{
   color: #333333;
   font-size: 1.375rem;
-  background-color: #333333;
+  background-color: #162bb7fa;
   border: 0.063rem solid #cccccc;
   box-shadow: 0 0 0.313rem #cccccc;
   padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
 }
 
-.contenidoIdiomas{
-  margin-bottom: 0.5rem;
-}
-
-.proyectos{
+#proyectos{
   color: #333333;
   font-size: 1.375rem;
-  background-color: #333333;
+  background-color: #162bb7fa;
   border: 0.063rem solid #cccccc;
   box-shadow: 0 0 0.313rem #cccccc;
   padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
 }
 
 .style3{
@@ -102,8 +114,9 @@
   border: 0.063rem solid #cccccc;
   box-shadow: 0 0 0.313rem #cccccc;
   padding-left: 1.25rem;
-  margin: 0.625rem 0;
   background-color: antiquewhite;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .fotoFabri{
@@ -142,16 +155,19 @@ h1{
 body{
   background-color: aliceblue;
 }
+
 .nombre{
   text-shadow: 0.05rem 0.05rem rgb(0.625rem3, 0.625rem5, 235);
-
 }
+
 .cargo{
   text-decoration: underline 0.05rem solid;
 }
+
 .footer{
   margin-top: 1.25rem;
 }
+
 .navbar{
   margin-top: 0.625rem;
   justify-content: space-between;
@@ -163,6 +179,7 @@ body{
   box-shadow: 0 0 0.313rem #cccccc;
   margin-bottom: 0.625rem;
 }
+
 .decorador-texto{
   text-decoration: none;
   color: #fff;
@@ -198,10 +215,8 @@ body{
 
 .btn-login{
   margin-right: 0.5rem;
-}
-
-#icono-ajuste-banner{
-  margin-right: 0.3rem;
+  margin-left: 0.5rem;
+  font-size: larger;
 }
 
 .zz{
@@ -210,10 +225,14 @@ body{
   right: 0;
 }
 
+#icono-ajuste-banner{
+  margin-right: 0.3rem;
+}
+
 .qr{
   margin-top: 2rem;
   margin-left: 42%;
-  max-width: 200px;
+  max-width: 320px;
 }
 
 .formulario-contacto{
@@ -240,6 +259,14 @@ body{
 #escaneame{
   text-align: center;
   margin-top: 2rem;
+    color: #333333;
+    font-size: 1.375rem;
+    background-color: #162bb7fa;
+    border: 0.063rem solid #cccccc;
+    box-shadow: 0 0 0.313rem #cccccc;
+    padding-bottom: 1.2rem;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
 }
 
 .hero{
