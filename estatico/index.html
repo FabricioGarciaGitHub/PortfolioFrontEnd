@@ -29,6 +29,7 @@
 </head>
 
 <body>
+
     <div class="general">
 
         <!-- Header (Logo Arg Prog, redes sociales y boton login) -->
@@ -91,8 +92,8 @@
                 </button>
 
                 <!-- Boton trash -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                        class="fa-solid fa-trash-can"></i></button>
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-eliminar-banner"><i
+              class="fa-solid fa-trash-can"></i></button>
             </div>
         </div>
 
@@ -151,8 +152,9 @@
                                 data-bs-target="#modal-edicion-foto-perfil"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+      data-bs-target="#modal-borrar-foto-perfil"><i
+      class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
 
@@ -166,8 +168,8 @@
                                 data-bs-target="#modal-editar-nombre-cargo"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-borrar-nombre-cargo"><i
+                                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
@@ -198,10 +200,9 @@
                     <!-- boton pencil -->
                     <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                         data-bs-target="#modal-editar-sobre-mi"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                    <!-- boton trash -->
                     <!-- Boton trash -->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                            class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-sobre-mi"><i
+                        class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>
@@ -228,8 +229,8 @@
                             data-bs-target="#modal-editar-contacto"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-contacto"><i
+                    class="fa-solid fa-trash-can"></i></button>
                         <!-- Botón plus -->
                         <button type="button" class="btn" data-bs-toggle="modal"
                             data-bs-target="#modal-medios-contacto"><i class="fa-solid fa-plus"></i></button>
@@ -245,8 +246,8 @@
             </div>
             <div class="position-absolute zz">
                 <!-- Boton plus -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+    data-bs-target="#modal-agregar-experiencia-laboral"><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
         <section class="d-flex row contenidoExpLaboral">
@@ -266,13 +267,13 @@
                         <p><b>Herramientas:</b> Itris y Excel.</p> <br>
                     </div>
                     <div class="zz">
-                        <!-- Boton pencil -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
-                                aria-hidden="true"></i></button>
+                         <!-- Boton pencil -->
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-expLaboral"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -292,13 +293,13 @@
                         <p><b>Herramientas:</b> Flow, Slack, GoogleSheets.</p> <br><br><br>
                     </div>
                     <div class="zz">
-                        <!-- Boton pencil -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
-                                aria-hidden="true"></i></button>
+                         <!-- Boton pencil -->
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-expLaboral"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -319,13 +320,13 @@
                         <p><b>Herramientas:</b> Microsoft Word, TestLink y Excel.</p><br><br>
                     </div>
                     <div class="zz">
-                        <!-- Boton pencil -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
-                                aria-hidden="true"></i></button>
+                         <!-- Boton pencil -->
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-expLaboral"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -338,8 +339,8 @@
             </div>
             <div class="position-absolute zz">
                 <!-- Boton plus -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                        class="fa-solid fa-plus"></i></button>
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-agregar-educacion"><i
+        class="fa-solid fa-plus"></i></button>
             </div>
         </div>
         <section class="d-flex row">
@@ -359,8 +360,9 @@
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-educacion"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -381,8 +383,9 @@
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-educacion"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -403,8 +406,9 @@
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-educacion"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -425,8 +429,9 @@
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-educacion"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -446,8 +451,9 @@
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-educacion"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -468,8 +474,9 @@
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                         <!-- Boton trash -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
+                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                 data-bs-target="#modal-eliminar-educacion"><i
+                 class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -482,8 +489,8 @@
             </div>
             <div class="position-absolute zz">
                 <!-- Boton plus -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+      data-bs-target="#modal-agregar-barra"><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
         <section class="container-fluid barraProgreso position-relative">
@@ -505,8 +512,9 @@
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar-progress-bar"><i
+                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="d-flex position-relative">
@@ -525,8 +533,9 @@
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar-progress-bar"><i
+                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -545,8 +554,9 @@
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar-progress-bar"><i
+                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -565,8 +575,9 @@
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar-progress-bar"><i
+                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -585,8 +596,9 @@
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar-progress-bar"><i
+                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -605,8 +617,9 @@
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
                             <!-- Boton trash -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                data-bs-target="#modal-eliminar-progress-bar"><i
+                class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
@@ -620,8 +633,8 @@
             </div>
             <div class="position-absolute zz">
                 <!-- Boton plus -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+      data-bs-target="#modal-agregar-idioma"><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
         <section class="d-flex contenidoIdiomas">
@@ -637,8 +650,8 @@
                     <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                         data-bs-target="#modal-edicion-idiomas"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                     <!-- Boton trash -->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                            class="fa-solid fa-trash-can"></i></button>
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-idioma"><i
+        class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>
@@ -650,8 +663,8 @@
             </div>
             <div class="position-absolute zz">
                 <!-- Boton plus -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+      data-bs-target="#modal-agregar-proyecto"><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
         <section class="d-flex">
@@ -667,8 +680,9 @@
                         data-bs-target="#modal-edicion-proyecto"><i class="fa fa-pencil"
                             aria-hidden="true"></i></button>
                     <!-- Boton trash -->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                            class="fa-solid fa-trash-can"></i></button>
+            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+            data-bs-target="#modal-eliminar-proyecto"><i
+            class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>
@@ -685,11 +699,10 @@
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                     data-bs-target="#modal-edicion-qr"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                 <!-- Boton trash -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                        class="fa-solid fa-trash-can"></i></button>
+        <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-qr"><i
+            class="fa-solid fa-trash-can"></i></button>
             </div>
         </section>
-
 
         <!-- Formulario contacto -->
         <div class="container-fluid formulario-contacto position-relative">
@@ -749,9 +762,9 @@
             </div>
             <div class="zz">
                 <!-- Boton trash -->
-                <!-- Boton trash -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                        class="fa-solid fa-trash-can"></i></button>
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+      data-bs-target="#modal-eliminar-formContacto"><i
+      class="fa-solid fa-trash-can"></i></button>
             </div>
         </div>
 
@@ -766,8 +779,8 @@
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                     data-bs-target="#modal-edicion-foother"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                 <!-- Boton trash -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
-                        class="fa-solid fa-trash-can"></i></button>
+        <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-foother"><i
+            class="fa-solid fa-trash-can"></i></button>
             </div>
         </footer>
 
@@ -775,7 +788,7 @@
 
     <!------------------------------------- M O D A L E S ------------------------------------------------>
 
-    <!-- Modal edicion banner -->
+   <!-- Modal edicion banner -->
     <div class="modal fade" id="cambio-banner-modal" tabindex="-1" aria-labelledby="cambio-banner-modal-label"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -797,6 +810,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal eliminar banner -->
+<div class="modal fade" id="modal-eliminar-banner" tabindex="-1" aria-labelledby="modal-borrar-banner-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="modal-borrar-banner-label">Eliminar banner</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      ¿Estás seguro que deseas eliminar el banner?
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-danger" id="eliminar-banner-btn">Eliminar</button>
+    </div>
+  </div>
+</div>
+</div>
 
     <!-- Modal edicion contacto -->
     <div class="modal fade" id="modal-editar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -882,93 +915,190 @@
         </div>
     </div>
 
-    <!-- Modal edicion experiencia-laboral -->
-    <div class="modal fade" id="modal-editar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos laborales</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="input-empresa">Ingresa el nombre de la empresa (máximo 50 caracteres)</label>
-                        <input type="text" class="form-control" id="input-empresa" maxlength="50">
-                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
-                            restantes</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputfa-flip-horizontal">Ingresa tu rol laboral (máximo 50 caracteres)</label>
-                        <input type="text" class="form-control" id="input-rol" maxlength="50">
-                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
-                            restantes</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-periodo">Ingresa la fecha de ingreso y egreso</label>
-                        <input type="date" class="form-control" id="input-periodo">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-actividad">Describe la actividad realizada (máximo 50 caracteres)</label>
-                        <input type="text" class="form-control" id="input-actividad" maxlength="50">
-                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
-                            restantes</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-herramientas">Describe las herramientas empleadas (máximo 50
-                            caracteres)</label>
-                        <input type="text" class="form-control" id="input-herramientas" maxlength="50">
-                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
-                            restantes</small>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                </div>
-            </div>
+    <!-- Modal eliminar contacto -->
+<div class="modal fade" id="modal-eliminar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar tus medios de contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar tus medios de contacto?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
     </div>
+  </div>
 
     <!-- Modal edicion educacion -->
-    <div class="modal fade" id="modal-edicion-educacion" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de educacion</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="input-foto">Selecciona una imagen</label>
-                        <input type="file" class="form-control" id="input-foto">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-establecimiento">Ingresa el nombre del establecimiento o entidad (máximo
-                            50 caracteres)</label>
-                        <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
-                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
-                            restantes</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-estudio">Ingresa el estudio y las horas de reloj</label>
-                        <input type="text" class="form-control" id="input-estudio">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-fecha">Ingresa la fecha de finalización</label>
-                        <input type="date" class="form-control" id="input-fecha" maxlength="50">
-                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
-                            restantes</small>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                </div>
-            </div>
+<div class="modal fade" id="modal-edicion-educacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de educacion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="input-foto">Selecciona una imagen</label>
+            <input type="file" class="form-control" id="input-foto">
+          </div>
+          <div class="form-group">
+            <label for="input-establecimiento">Ingresa el nombre del establecimiento o entidad (máximo 50 caracteres)</label>
+            <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-estudio">Ingresa el estudio y las horas de reloj</label>
+            <input type="text" class="form-control" id="input-estudio">
+          </div>
+          <div class="form-group">
+            <label for="input-inicio">Ingresa la fecha de inicio</label>
+            <input type="date" class="form-control" id="input-inicio">
+          </div>
+          <div class="form-group">
+            <label for="input-finalizacion">Ingresa la fecha de finalización</label>
+            <input type="date" class="form-control" id="input-finalizacion">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Modal agregar educacion -->
+<div class="modal fade" id="modal-agregar-educacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agrega un nuevo conocimiento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="input-foto">Selecciona una imagen</label>
+            <input type="file" class="form-control" id="input-foto">
+          </div>
+          <div class="form-group">
+            <label for="input-establecimiento">Ingresa el nombre del establecimiento o entidad (máximo 50 caracteres)</label>
+            <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-estudio">Ingresa las horas de reloj</label>
+            <input type="text" class="form-control" id="input-estudio">
+          </div>
+          <div class="form-group">
+            <label for="input-inicio">Ingresa la fecha de inicio</label>
+            <input type="date" class="form-control" id="input-inicio">
+          </div>
+          <div class="form-group">
+            <label for="input-finalizacion">Ingresa la fecha de finalización</label>
+            <input type="date" class="form-control" id="input-finalizacion">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal eliminar educacion -->
+<div class="modal fade" id="modal-eliminar-educacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar tu estudio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar este estudio?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal eliminar experiencia laboral -->
+<div class="modal fade" id="modal-eliminar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar experiencia laboral</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar esta experiencia laboral?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal agregar experiencia laboral -->
+<div class="modal fade" id="modal-agregar-experiencia-laboral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agrega una nueva experiencia laboral</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="input-foto-empresa">Selecciona una imagen</label>
+            <input type="file" class="form-control" id="input-foto-empresa">
+          </div>
+          <div class="form-group">
+            <label for="input-empresa">Nombre de la empresa</label>
+            <input type="text" class="form-control" id="input-empresa" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-rol">Rol laboal</label>
+            <input type="text" class="form-control" id="input-rol" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-alta">Ingrese la fecha de alta</label>
+            <input type="date" class="form-control" id="input-alta">
+          </div>
+          <div class="form-group">
+            <label for="input-cese">Ingresa la fecha de cese</label>
+            <input type="date" class="form-control" id="input-cese">
+            </div>
+          <div class="form-group">
+            <label for="input-actividad">Actividad laboral</label>
+            <input type="text" class="form-control" id="input-actividad" maxlength="100">
+            <small class="form-text text-muted"><span id="counter">100</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-herramientas">Principales herramientas utilizadas</label>
+            <input type="text" class="form-control" id="input-herramientas" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondaray" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Modal edicion progress-bar -->
     <div class="modal fade" id="modal-edicion-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -999,6 +1129,52 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal eliminar progress-bar -->
+<div class="modal fade" id="modal-eliminar-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar barra de progreso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar esta barra de progreso?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal agregar progress-bar -->
+<div class="modal fade" id="modal-agregar-barra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agrega una nueva barra de habilidades</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="input-habilidad">Ingresa el nombre de la habilidad (máximo 50 caracteres)</label>
+            <input type="text" class="form-control" id="input-habilidad" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-porcentaje">Ingresa el porcentaje de conocimiento de la habilidad</label>
+            <input type="number" class="form-control" id="input-porcentaje">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Modal edición idiomas -->
     <div class="modal fade" id="modal-edicion-idiomas" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1042,7 +1218,63 @@
         </div>
     </div>
 
-    <!-- Modal edicion proyectos -->
+    <!-- Modal eliminar idioma -->
+<div class="modal fade" id="modal-eliminar-idioma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar idioma</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar este idioma?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal agregar idioma -->
+<div class="modal fade" id="modal-agregar-idioma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agrega un nuevo idioma</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="input-foto">Selecciona una imagen</label>
+            <input type="file" class="form-control" id="input-foto">
+          </div>
+          <div class="form-group">
+            <label for="input-idioma">Ingresa el idioma (máximo 50 caracteres)</label>
+            <input type="text" class="form-control" id="input-idioma" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-nivel">Ingresa el nivel</label>
+            <input type="text" class="form-control" id="input-nivel" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-descripcion">Ingresa una breve descripción de tu comprensión del idioma</label>
+            <input type="text" class="form-control" id="input-descripcion" maxlength="100">
+            <small class="form-text text-muted"><span id="counter">100</span> caracteres restantes</small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal edicion proyecto -->
     <div class="modal fade" id="modal-edicion-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1084,6 +1316,67 @@
         </div>
     </div>
 
+    <!-- Modal eliminar proyecto -->
+<div class="modal fade" id="modal-eliminar-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar tu proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar este proyecto?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal agregar proyecto -->
+<div class="modal fade" id="modal-agregar-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agrega un proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="input-foto">Selecciona una imagen</label>
+            <input type="file" class="form-control" id="input-foto">
+          </div>
+          <div class="form-group">
+            <label for="input-establecimiento">Ingresa el nombre del proyecto (máximo 50 caracteres)</label>
+            <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-estudio">Ingresa el título de tu proyecto y las horas de reloj</label>
+            <input type="text" class="form-control" id="input-estudio" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-fecha-inicio">Ingresa la fecha de inicio</label>
+            <input type="date" class="form-control" id="input-fecha-inicio" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+          <div class="form-group">
+            <label for="input-fecha-cierre">Ingresa la fecha de finalización</label>
+            <input type="date" class="form-control" id="input-fecha-cierre" maxlength="50">
+            <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Modal edicion QR -->
     <div class="modal fade" id="modal-edicion-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -1106,13 +1399,32 @@
         </div>
     </div>
 
+    <!-- Modal eliminar QR -->
+<div class="modal fade" id="modal-eliminar-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar QR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar el QR?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Modal edicion footer -->
     <div class="modal fade" id="modal-edicion-foother" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edita tu Foother</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edita el Foother</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -1131,7 +1443,26 @@
         </div>
     </div>
 
-    <!-- Modal edicion foto perfil-->
+    <!-- Modal eliminar footer -->
+<div class="modal fade" id="modal-eliminar-foother" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar tu Foother</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar el Foother?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal edicion foto perfil -->
     <div class="modal fade" id="modal-edicion-foto-perfil" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1153,6 +1484,25 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal borrar foto perfil -->
+<div class="modal fade" id="modal-borrar-foto-perfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar foto de perfil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro que deseas eliminar la foto de perfil?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Modal edicion nombre y cargo -->
     <div class="modal fade" id="modal-editar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1186,6 +1536,25 @@
         </div>
     </div>
 
+    <!-- Modal eliminar nombre y cargo -->
+<div class="modal fade" id="modal-borrar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de nombre y cargo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro deseas eliminar el contenido de nombre y cargo?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Modal edicion Sobre Mí -->
     <div class="modal fade" id="modal-editar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -1214,7 +1583,26 @@
         </div>
     </div>
 
-    <!-- Modal de medios de contacto -->
+    <!-- Modal eliminar Sobre Mí -->
+<div class="modal fade" id="modal-eliminar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de resumen</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro deseas eliminar el contenido del campo "Sobre Mí"?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal medios de contacto -->
     <div class="modal fade" id="modal-medios-contacto" tabindex="-1" role="dialog"
         aria-labelledby="modal-medios-contacto-titulo" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1246,7 +1634,7 @@
         </div>
     </div>
 
-    <!-- Modal para agregar correo electrónico -->
+    <!-- Modal agregar correo electrónico -->
     <div class="modal fade" id="modal-agregar-correo" tabindex="-1" role="dialog"
         aria-labelledby="modal-agregar-correo-titulo" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1270,7 +1658,7 @@
         </div>
     </div>
 
-    <!-- Modal para agregar número de teléfono -->
+    <!-- Modal agregar número de teléfono -->
     <div class="modal fade" id="modal-agregar-telefono" tabindex="-1" role="dialog"
         aria-labelledby="modal-agregar-telefono-titulo" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1293,7 +1681,8 @@
             </div>
         </div>
     </div>
-    <!-- Modal para agregar red social -->
+    
+    <!-- Modal agregar red social -->
     <div class="modal fade" id="modal-agregar-red-social" tabindex="-1" role="dialog"
         aria-labelledby="modal-agregar-red-social-titulo" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1330,6 +1719,25 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal eliminar formulario de contacto -->
+<div class="modal fade" id="modal-eliminar-formContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar formulario de contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Seguro desea eliminar el formulario de contacto?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
