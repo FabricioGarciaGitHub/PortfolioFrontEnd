@@ -1,5 +1,14 @@
 <!-- Barra de progreso -->
-<h1 class="container-fluid" id="habilidades">Hard and Soft skills:</h1>
+<div class="d-flex position-relative" id="habilidades">
+  <div>
+      <h1 class="container-fluid">Hard and Soft skills:</h1>
+  </div>
+  <div class="position-absolute zz">
+      <!-- Boton plus -->
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+          data-bs-target="#modal-agregar-barra"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</div>
 <section class="container-fluid barraProgreso position-relative">
     <div class="d-flex">
         <div class="row">
@@ -13,12 +22,13 @@
                   </div>
               </div>
               <div class="zz position-absolute">
-                <!-- Boton lapiz -->
+                <!-- Boton pencil -->
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                     data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
+                <!-- Boton trash -->
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    data-bs-target="#modal-eliminar-progress-bar"><i
+                    class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
           <div class="d-flex position-relative">
@@ -31,12 +41,13 @@
                 </div>
             </div>
             <div class="zz position-absolute">
-              <!-- Boton lapiz -->
+              <!-- Boton pencil -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                   data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <!-- Boton cruz -->
+              <!-- Boton trash -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                  data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  data-bs-target="#modal-eliminar-progress-bar"><i
+                  class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
           <div class="position-relative">
@@ -49,12 +60,13 @@
                 </div>
             </div>
             <div class="zz position-absolute">
-              <!-- Boton lapiz -->
+              <!-- Boton pencil -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                   data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <!-- Boton cruz -->
+              <!-- Boton trash -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                  data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  data-bs-target="#modal-eliminar-progress-bar"><i
+                  class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
           <div class="position-relative">
@@ -67,12 +79,13 @@
                 </div>
             </div>
             <div class="zz position-absolute">
-              <!-- Boton lapiz -->
+              <!-- Boton pencil -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                   data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <!-- Boton cruz -->
+              <!-- Boton trash -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                  data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  data-bs-target="#modal-eliminar-progress-bar"><i
+                  class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
           <div class="position-relative">
@@ -85,12 +98,13 @@
                 </div>
             </div>
             <div class="zz position-absolute">
-              <!-- Boton lapiz -->
+              <!-- Boton pencil -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                   data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <!-- Boton cruz -->
+              <!-- Boton trash -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                  data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  data-bs-target="#modal-eliminar-progress-bar"><i
+                  class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
           <div class="position-relative">
@@ -103,18 +117,45 @@
                 </div>
             </div>
             <div class="zz position-absolute">
-              <!-- Boton lapiz -->
+              <!-- Boton pencil -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                   data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-              <!-- Boton cruz -->
+              <!-- Boton trash -->
               <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                  data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  data-bs-target="#modal-eliminar-progress-bar"><i
+                  class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
         </div>
     </div>
 </section>
 
+<!-- Modal agregar progress-bar -->
+<div class="modal fade" id="modal-agregar-barra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agrega una nueva barra de habilidades</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-habilidad">Ingresa el nombre de la habilidad (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-habilidad" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-porcentaje">Ingresa el porcentaje de conocimiento de la habilidad</label>
+          <input type="number" class="form-control" id="input-porcentaje">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal edicion campo progress-bar -->
 <div class="modal fade" id="modal-edicion-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -142,7 +183,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Modal eliminar campo progress-bar -->
 <div class="modal fade" id="modal-eliminar-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

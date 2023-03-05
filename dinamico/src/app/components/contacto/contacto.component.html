@@ -14,18 +14,21 @@
                         </button>
             </div>
             <div class="zz">
-                <!-- Boton lapiz -->
+                <!-- Boton pencil -->
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-editar-contacto"><i
                         class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
+                <!-- Boton trash -->
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-contacto"><i
-                        class="fa fa-times" aria-hidden="true"></i></button>
+                  class="fa-solid fa-trash-can"></i></button>
+                <!-- Botón plus -->
+                <button type="button" class="btn" data-bs-toggle="modal"
+                data-bs-target="#modal-medios-contacto"><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Modal edicion campo contacto -->
+<!-- Modal edicion contacto -->
 <div class="modal fade" id="modal-editar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -62,7 +65,7 @@
   </div>
 </div>
 
-<!-- Modal eliminar campo contacto -->
+<!-- Modal eliminar contacto -->
 <div class="modal fade" id="modal-eliminar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -79,4 +82,163 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Modal agregar contacto -->
+<div class="modal fade" id="modal-agregar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="input-email">Ingresa tu Email (máximo 50 caracteres)</label>
+                <input type="text" class="form-control" id="input-email" maxlength="50">
+                <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                    restantes</small>
+            </div>
+            <div class="form-group">
+                <label for="input-linedIn">Ingresa tu link de LinkedIn (máximo 50 caracteres)</label>
+                <input type="text" class="form-control" id="input-LinkeIn" maxlength="50">
+                <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                    restantes</small>
+            </div>
+            <div class="form-group">
+                <label for="input-telefono">Ingresa tu Número de teléfono (formato internacional)</label>
+                <input type="tel" class="form-control" id="input-telefono"
+                    placeholder="Ingresa tu número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div class="form-group">
+                <label for="input-github">Ingresa tu link de Git-Hub (máximo 50 caracteres)</label>
+                <input type="text" class="form-control" id="input-github" maxlength="50">
+                <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                    restantes</small>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal de medios de contacto -->
+<div class="modal fade" id="modal-medios-contacto" tabindex="-1" role="dialog"
+aria-labelledby="modal-medios-contacto-titulo" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modal-medios-contacto-titulo">Agregar medio de
+                contacto</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Selecciona el medio de contacto que deseas agregar:</p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-correo">Correo
+                    electrónico</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-telefono">Teléfono</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-red-social">Red
+                    social</button>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal para agregar correo electrónico -->
+<div class="modal fade" id="modal-agregar-correo" tabindex="-1" role="dialog"
+aria-labelledby="modal-agregar-correo-titulo" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modal-agregar-correo-titulo">Agregar correo
+                electrónico</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Agregar correo electrónico aquí:</p>
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal para agregar número de teléfono -->
+<div class="modal fade" id="modal-agregar-telefono" tabindex="-1" role="dialog"
+aria-labelledby="modal-agregar-telefono-titulo" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modal-agregar-telefono-titulo">Agregar número de
+                teléfono</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Agregar número de teléfono aquí:</p>
+            <input type="tel" class="form-control" placeholder="Número de teléfono">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Modal para agregar red social -->
+<div class="modal fade" id="modal-agregar-red-social" tabindex="-1" role="dialog"
+aria-labelledby="modal-agregar-red-social-titulo" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modal-agregar-red-social-titulo">Agregar red social
+            </h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="twitter">Twitter</label>
+                        <input type="text" class="form-control" id="twitter" name="twitter"
+                            placeholder="Ingrese su usuario de Twitter">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="facebook">Facebook</label>
+                        <input type="text" class="form-control" id="facebook" name="facebook"
+                            placeholder="Ingrese su usuario de Facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+    </div>
+</div>
 </div>

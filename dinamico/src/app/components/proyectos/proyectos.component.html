@@ -1,5 +1,14 @@
 <!-- Proyectos -->
-<h1 class="container-fluid" id="proyectos">Proyectos:</h1>
+<div class="d-flex position-relative" id="proyectos">
+  <div>
+      <h1 class="container-fluid">Proyectos:</h1>
+  </div>
+  <div class="position-absolute zz">
+      <!-- Boton plus -->
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+          data-bs-target="#modal-agregar-proyecto"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</div>
 <section class="d-flex">
     <div class="col-xxl-4 col-xl-4 col-md-4 d-flex position-relative">
         <div class="style3 col-12">
@@ -8,18 +17,60 @@
             <p><b>Período:</b> Ago-2022 - Nov-2022</p>
         </div>
         <div class="zz">
-            <!-- Boton lapiz -->
+            <!-- Boton pencil -->
             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                 data-bs-target="#modal-edicion-proyecto"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-            <!-- Boton cruz -->
+            <!-- Boton trash -->
             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                data-bs-target="#modal-eliminar-proyecto"><i class="fa fa-times" aria-hidden="true"></i></button>
+                data-bs-target="#modal-eliminar-proyecto"><i
+                class="fa-solid fa-trash-can"></i></button>
         </div>
     </div>
 </section>
 
+<!-- Modal agregar proyecto -->
+<div class="modal fade" id="modal-agregar-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agrega un proyecto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-foto">Selecciona una imagen</label>
+          <input type="file" class="form-control" id="input-foto">
+        </div>
+        <div class="form-group">
+          <label for="input-establecimiento">Ingresa el nombre del proyecto (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-establecimiento" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-estudio">Ingresa el título de tu proyecto y las horas de reloj</label>
+          <input type="text" class="form-control" id="input-estudio" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-fecha-inicio">Ingresa la fecha de inicio</label>
+          <input type="date" class="form-control" id="input-fecha-inicio" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-fecha-cierre">Ingresa la fecha de finalización</label>
+          <input type="date" class="form-control" id="input-fecha-cierre" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- Modal edicion campo proyectos -->
+<!-- Modal edicion proyecto -->
 <div class="modal fade" id="modal-edicion-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -43,8 +94,13 @@
           <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
         </div>
         <div class="form-group">
-          <label for="input-fecha">Ingresa la fecha de finalización</label>
-          <input type="date" class="form-control" id="input-fecha" maxlength="50">
+          <label for="input-fecha-inicio">Ingresa la fecha de inicio</label>
+          <input type="date" class="form-control" id="input-fecha-inicio" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-fecha-cierre">Ingresa la fecha de finalización</label>
+          <input type="date" class="form-control" id="input-fecha-cierre" maxlength="50">
           <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
         </div>
       </div>
@@ -56,8 +112,7 @@
   </div>
 </div>
 
-
-<!-- Modal eliminar campo proyectos -->
+<!-- Modal eliminar proyecto -->
 <div class="modal fade" id="modal-eliminar-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

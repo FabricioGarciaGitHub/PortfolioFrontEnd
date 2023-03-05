@@ -4,21 +4,21 @@
   <div><img id="banner" class="w-100" src="assets/images/banner.png" alt="Banner">
   </div>
 
-  <div class="zz row flex-column">
+  <div class="zz row flex-column" id="icono-ajuste-banner">
 
-    <!-- Boton editar banner -->
-    <button type="button" class="btn col-6" data-bs-toggle="modal" data-bs-target="#cambio-banner-modal">
-      <i class="fa fa-pencil" aria-hidden="true"></i>
-    </button>
+      <!-- Boton pencil -->
+      <button type="button" class="btn col-6" data-bs-toggle="modal" data-bs-target="#cambio-banner-modal">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+      </button>
 
-    <!-- Boton eliminar banner -->
-    <button type="button" class="btn col-6" data-bs-toggle="modal" data-bs-target="#modal-borrar-banner">
-      <i class="fa fa-times" aria-hidden="true"></i></button>
+      <!-- Boton trash -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-eliminar-banner"><i
+              class="fa-solid fa-trash-can"></i></button>
   </div>
 </div>
 
 <!-- Modal eliminar banner -->
-<div class="modal fade" id="modal-borrar-banner" tabindex="-1" aria-labelledby="modal-borrar-banner-label"
+<div class="modal fade" id="modal-eliminar-banner" tabindex="-1" aria-labelledby="modal-borrar-banner-label"
   aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -39,23 +39,23 @@
 
 <!-- Modal edicion banner -->
 <div class="modal fade" id="cambio-banner-modal" tabindex="-1" aria-labelledby="cambio-banner-modal-label"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
+aria-hidden="true">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cambio-banner-modal-label">Cambiar banner</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <label for="banner-input">Selecciona un archivo de imagen:</label>
-          <input type="file" class="form-control-file" id="banner-input">
+        <div class="modal-header">
+            <h5 class="modal-title" id="cambio-banner-modal-label">Cambiar banner</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" id="guardar-cambios-btn">Guardar cambios</button>
-      </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="banner-input">Selecciona un archivo de imagen:</label>
+                <input type="file" class="form-control-file" id="banner-input">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="guardar-cambios-btn">Guardar cambios</button>
+        </div>
     </div>
-  </div>
+</div>
 </div>

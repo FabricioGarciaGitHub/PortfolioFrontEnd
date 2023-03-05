@@ -1,5 +1,14 @@
 <!-- Idiomas -->
-<h1 class="container-fluid" id="idiomas">Idiomas:</h1>
+<div class="d-flex position-relative" id="idiomas">
+  <div>
+      <h1 class="container-fluid">Ediomas:</h1>
+  </div>
+  <div class="position-absolute zz">
+      <!-- Boton plus -->
+      <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+          data-bs-target="#modal-agregar-idioma"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</div>
 <section class="d-flex contenidoIdiomas">
   <div class="col-xxl-4 col-xl-4 col-md-4 d-flex position-relative">
     <div class="style3">
@@ -9,18 +18,54 @@
         escritura.</p>
     </div>
     <div class="zz">
-      <!-- Boton lapiz -->
+      <!-- Boton pencil -->
       <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-edicion-idiomas"><i
           class="fa fa-pencil" aria-hidden="true"></i></button>
-      <!-- Boton cruz -->
+      <!-- Boton trash -->
       <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#modal-eliminar-idioma"><i
-          class="fa fa-times" aria-hidden="true"></i></button>
+        class="fa-solid fa-trash-can"></i></button>
     </div>
   </div>
 </section>
 
-<!-- Modal edición campo idiomas -->
+<!-- Modal agregar idioma -->
+<div class="modal fade" id="modal-agregar-idioma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agrega un nuevo idioma</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-foto">Selecciona una imagen</label>
+          <input type="file" class="form-control" id="input-foto">
+        </div>
+        <div class="form-group">
+          <label for="input-idioma">Ingresa el idioma (máximo 50 caracteres)</label>
+          <input type="text" class="form-control" id="input-idioma" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-nivel">Ingresa el nivel</label>
+          <input type="text" class="form-control" id="input-nivel" maxlength="50">
+          <small class="form-text text-muted"><span id="counter">50</span> caracteres restantes</small>
+        </div>
+        <div class="form-group">
+          <label for="input-descripcion">Ingresa una breve descripción de tu comprensión del idioma</label>
+          <input type="text" class="form-control" id="input-descripcion" maxlength="100">
+          <small class="form-text text-muted"><span id="counter">100</span> caracteres restantes</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Modal edición campo idiomas -->
 <div class="modal fade" id="modal-edicion-idiomas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -56,7 +101,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Modal eliminar campo educacion -->
 <div class="modal fade" id="modal-eliminar-idioma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
