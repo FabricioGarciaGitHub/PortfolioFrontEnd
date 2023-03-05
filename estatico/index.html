@@ -90,9 +90,9 @@
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                 </button>
 
-                <!-- Boton eliminar banner -->
-                <button type="button" class="btn col-6" data-bs-toggle="modal" data-bs-target="#modal-borrar-banner">
-                    <i class="fa fa-times" aria-hidden="true"></i></button>
+                <!-- Boton trash -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                        class="fa-solid fa-trash-can"></i></button>
             </div>
         </div>
 
@@ -150,10 +150,9 @@
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-foto-perfil"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton eliminar foto perfil -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-borrar-foto-perfil"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
 
@@ -162,14 +161,13 @@
                         <h1 class="nombre">Fabricio David García</h1>
                         <p>Full Stack Developer Jr.</p>
                         <div class="zz">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-editar-nombre-cargo"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-borrar-nombre-cargo"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
@@ -197,13 +195,13 @@
                     flexible y
                     aprendo rápido las nuevas tecnologías.</p>
                 <div class="zz">
-                    <!-- Boton lapiz -->
+                    <!-- boton pencil -->
                     <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                         data-bs-target="#modal-editar-sobre-mi"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                    <!-- Boton cruz -->
-                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                        data-bs-target="#modal-eliminar-sobre-mi"><i class="fa fa-times"
-                            aria-hidden="true"></i></button>
+                    <!-- boton trash -->
+                    <!-- Boton trash -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                            class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>
@@ -221,23 +219,36 @@
                         <p><b>Celular: </b><a href="tel:+5493416210853" class="style5">+54 9 3416210853</a></p>
                         <p><b>Git Hub: </b><a href="https://www.github.com/FabricioGarciaGitHub?tab=repositories"
                                 class="style5">www.github.com/FabricioGarciaGitHub?tab=repositories</a></p>
+                        <button type="button" class="btn"><a href="https://we.tl/t-ZSrICwuoay" class="btn btn-primary"
+                                download><i class="fa-solid fa-file-arrow-down"></i> CV</a></button>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-editar-contacto"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-                        <!-- Boton cruz -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-contacto"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                        <!-- Boton trash -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                        <!-- Botón plus -->
+                        <button type="button" class="btn" data-bs-toggle="modal"
+                            data-bs-target="#modal-medios-contacto"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Experiencia laboral -->
-        <h1 class="container-fluid" id="Experiencia-laboral">Experiencia laboral:</h1>
+        <div class="d-flex position-relative" id="Experiencia-laboral">
+            <div>
+                <h1 class="container-fluid">Experiencia laboral:</h1>
+            </div>
+            <div class="position-absolute zz">
+                <!-- Boton plus -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
         <section class="d-flex row contenidoExpLaboral">
 
             <!-- Tork -->
@@ -255,14 +266,13 @@
                         <p><b>Herramientas:</b> Itris y Excel.</p> <br>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-                        <!-- Boton cruz -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                        <!-- Boton trash -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -282,15 +292,13 @@
                         <p><b>Herramientas:</b> Flow, Slack, GoogleSheets.</p> <br><br><br>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                        <!-- Boton trash -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -311,22 +319,29 @@
                         <p><b>Herramientas:</b> Microsoft Word, TestLink y Excel.</p><br><br>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-editar-expLaboral"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
-                        <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-expLaboral"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                        <!-- Boton trash -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Educacion -->
-        <h1 class="container-fluid" id="educacion">Educación:</h1>
+        <div class="d-flex position-relative" id="educacion">
+            <div>
+                <h1 class="container-fluid">Educación:</h1>
+            </div>
+            <div class="position-absolute zz">
+                <!-- Boton plus -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                        class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
         <section class="d-flex row">
 
             <!-- Titulo electromecanico -->
@@ -339,14 +354,13 @@
                         <p><b>Período:</b> 2011 - 2008</p>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-                        <!-- Boton cruz -->
+                        <!-- Boton trash -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -362,15 +376,13 @@
                         <p><b>Período:</b> Abr-2022 - Jun-2022</p>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
+                        <!-- Boton trash -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -386,15 +398,13 @@
                         <p><b>Período:</b> Mar-2022 - Ago-2022</p>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
+                        <!-- Boton trash -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-liminar-educacion"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -410,15 +420,13 @@
                         <p><b>Período:</b> Jul-2022 - Sep-2022</p>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
+                        <!-- Boton trash -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -433,15 +441,13 @@
                         <p><b>Período:</b> Ago-2022 - Nov-2022</p>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
+                        <!-- Boton trash -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -457,22 +463,29 @@
                         <p><b>Período:</b> Ago-2022 - Nov-2022</p>
                     </div>
                     <div class="zz">
-                        <!-- Boton lapiz -->
+                        <!-- Boton pencil -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                             data-bs-target="#modal-edicion-educacion"><i class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
-
-                        <!-- Boton cruz -->
+                        <!-- Boton trash -->
                         <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                            data-bs-target="#modal-eliminar-educacion"><i class="fa fa-times"
-                                aria-hidden="true"></i></button>
+                            data-bs-target="#confirm-delete"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Barra de progreso -->
-        <h1 class="container-fluid" id="habilidades">Hard and Soft skills:</h1>
+        <div class="d-flex position-relative" id="habilidades">
+            <div>
+                <h1 class="container-fluid">Hard and Soft skills:</h1>
+            </div>
+            <div class="position-absolute zz">
+                <!-- Boton plus -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
         <section class="container-fluid barraProgreso position-relative">
             <div class="d-flex">
                 <div class="row">
@@ -487,14 +500,13 @@
                             </div>
                         </div>
                         <div class="zz position-absolute">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="d-flex position-relative">
@@ -508,14 +520,13 @@
                             </div>
                         </div>
                         <div class="zz position-absolute">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -529,14 +540,13 @@
                             </div>
                         </div>
                         <div class="zz position-absolute">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -550,14 +560,13 @@
                             </div>
                         </div>
                         <div class="zz position-absolute">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -571,14 +580,13 @@
                             </div>
                         </div>
                         <div class="zz position-absolute">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                     <div class="position-relative">
@@ -592,14 +600,13 @@
                             </div>
                         </div>
                         <div class="zz position-absolute">
-                            <!-- Boton lapiz -->
+                            <!-- boton pencil -->
                             <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                                 data-bs-target="#modal-edicion-progress-bar"><i class="fa fa-pencil"
                                     aria-hidden="true"></i></button>
-                            <!-- Boton cruz -->
-                            <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                                data-bs-target="#modal-eliminar-progress-bar"><i class="fa fa-times"
-                                    aria-hidden="true"></i></button>
+                            <!-- Boton trash -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                                    class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
@@ -607,7 +614,16 @@
         </section>
 
         <!-- Idiomas -->
-        <h1 class="container-fluid" id="idiomas">Idiomas:</h1>
+        <div class="d-flex position-relative" id="idiomas">
+            <div>
+                <h1 class="container-fluid">Ediomas:</h1>
+            </div>
+            <div class="position-absolute zz">
+                <!-- Boton plus -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
         <section class="d-flex contenidoIdiomas">
             <div class="col-xxl-4 col-xl-4 col-md-4 d-flex position-relative">
                 <div class="style3">
@@ -617,18 +633,27 @@
                         escritura.</p>
                 </div>
                 <div class="zz">
-                    <!-- Boton lapiz -->
+                    <!-- boton pencil -->
                     <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                         data-bs-target="#modal-edicion-idiomas"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                    <!-- Boton cruz -->
-                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                        data-bs-target="#modal-eliminar-idioma"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <!-- Boton trash -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                            class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>
 
         <!-- Proyectos -->
-        <h1 class="container-fluid" id="proyectos">Proyectos:</h1>
+        <div class="d-flex position-relative" id="proyectos">
+            <div>
+                <h1 class="container-fluid">Proyectos:</h1>
+            </div>
+            <div class="position-absolute zz">
+                <!-- Boton plus -->
+                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
+                    data-bs-target="#modal-agregar-contacto"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
         <section class="d-flex">
             <div class="col-xxl-4 col-xl-4 col-md-4 d-flex position-relative">
                 <div class="style3 col-12">
@@ -637,14 +662,13 @@
                     <p><b>Período:</b> Ago-2022 - Nov-2022</p>
                 </div>
                 <div class="zz">
-                    <!-- Boton lapiz -->
+                    <!-- boton pencil -->
                     <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                         data-bs-target="#modal-edicion-proyecto"><i class="fa fa-pencil"
                             aria-hidden="true"></i></button>
-                    <!-- Boton cruz -->
-                    <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                        data-bs-target="#modal-eliminar-proyecto"><i class="fa fa-times"
-                            aria-hidden="true"></i></button>
+                    <!-- Boton trash -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                            class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>
@@ -657,12 +681,12 @@
                     alt="QR de mi currículum vitae">
             </div>
             <div class="zz">
-                <!-- Boton lapiz -->
+                <!-- boton pencil -->
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                     data-bs-target="#modal-edicion-qr"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-eliminar-qr"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <!-- Boton trash -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                        class="fa-solid fa-trash-can"></i></button>
             </div>
         </section>
 
@@ -689,7 +713,8 @@
                         </div>
 
                         <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon" aria-hidden="true"></i></span>
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"
+                                    aria-hidden="true"></i></span>
                             <div class="col-md-8">
                                 <input id="email" name="email" type="text" placeholder="Email" class="form-control">
                             </div>
@@ -723,10 +748,10 @@
                 </form>
             </div>
             <div class="zz">
-                <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-eliminar-formContacto"><i class="fa fa-times"
-                        aria-hidden="true"></i></button>
+                <!-- Boton trash -->
+                <!-- Boton trash -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                        class="fa-solid fa-trash-can"></i></button>
             </div>
         </div>
 
@@ -737,38 +762,18 @@
                 <p class="font-italic">Todos los derechos reservados.© <b>Fabricio García</b></p>
             </div>
             <div class="zz">
-                <!-- Boton lapiz -->
+                <!-- boton pencil -->
                 <button type="button" class="btn d-md-block" data-bs-toggle="modal"
                     data-bs-target="#modal-edicion-foother"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                <!-- Boton cruz -->
-                <button type="button" class="btn d-md-block" data-bs-toggle="modal"
-                    data-bs-target="#modal-eliminar-foother"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <!-- Boton trash -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#confirm-delete"><i
+                        class="fa-solid fa-trash-can"></i></button>
             </div>
         </footer>
-        
+
     </div>
 
     <!------------------------------------- M O D A L E S ------------------------------------------------>
-
-    <!-- Modal eliminar banner -->
-    <div class="modal fade" id="modal-borrar-banner" tabindex="-1" aria-labelledby="modal-borrar-banner-label"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-borrar-banner-label">Eliminar banner</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Estás seguro que deseas eliminar el banner?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-danger" id="eliminar-banner-btn">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Modal edicion banner -->
     <div class="modal fade" id="cambio-banner-modal" tabindex="-1" aria-labelledby="cambio-banner-modal-label"
@@ -793,7 +798,7 @@
         </div>
     </div>
 
-    <!-- Modal edicion campo contacto -->
+    <!-- Modal edicion contacto -->
     <div class="modal fade" id="modal-editar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -835,27 +840,49 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo contacto -->
-    <div class="modal fade" id="modal-eliminar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <!-- Modal agregar contacto -->
+    <div class="modal fade" id="modal-agregar-contacto" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tus medios de contacto</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edita tus datos de contacto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ¿Seguro desea eliminar tus medios de contacto?
+                    <div class="form-group">
+                        <label for="input-email">Ingresa tu Email (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-email" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-linedIn">Ingresa tu link de LinkedIn (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-LinkeIn" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-telefono">Ingresa tu Número de teléfono (formato internacional)</label>
+                        <input type="tel" class="form-control" id="input-telefono"
+                            placeholder="Ingresa tu número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-github">Ingresa tu link de Git-Hub (máximo 50 caracteres)</label>
+                        <input type="text" class="form-control" id="input-github" maxlength="50">
+                        <small class="form-text text-muted"><span id="counter">50</span> caracteres
+                            restantes</small>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal edicion campo experiencia-laboral -->
+    <!-- Modal edicion experiencia-laboral -->
     <div class="modal fade" id="modal-editar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -903,27 +930,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo expLaboral -->
-    <div class="modal fade" id="modal-eliminar-expLaboral" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar experiencia laboral</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar esta experiencia laboral?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion campo educacion -->
+    <!-- Modal edicion educacion -->
     <div class="modal fade" id="modal-edicion-educacion" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -963,27 +970,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo educacion -->
-    <div class="modal fade" id="modal-eliminar-educacion" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tu estudio</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar este estudio?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion campo progress-bar -->
+    <!-- Modal edicion progress-bar -->
     <div class="modal fade" id="modal-edicion-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1013,27 +1000,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo progress-bar -->
-    <div class="modal fade" id="modal-eliminar-progress-bar" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar barra de progreso</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar esta barra de progreso?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edición campo idiomas -->
+    <!-- Modal edición idiomas -->
     <div class="modal fade" id="modal-edicion-idiomas" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1075,27 +1042,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo educacion -->
-    <div class="modal fade" id="modal-eliminar-idioma" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar idioma</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar este idioma?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion campo proyectos -->
+    <!-- Modal edicion proyectos -->
     <div class="modal fade" id="modal-edicion-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1137,27 +1084,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo proyectos -->
-    <div class="modal fade" id="modal-eliminar-proyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tu proyecto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar este proyecto?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion campo QR -->
+    <!-- Modal edicion QR -->
     <div class="modal fade" id="modal-edicion-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1179,26 +1106,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo QR -->
-    <div class="modal fade" id="modal-eliminar-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar QR</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar el QR?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion campo footer -->
+    <!-- Modal edicion footer -->
     <div class="modal fade" id="modal-edicion-foother" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1223,47 +1131,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo footer -->
-    <div class="modal fade" id="modal-eliminar-foother" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar tu Foother</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar el Foother?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal eliminar campo formulario de contacto -->
-    <div class="modal fade" id="modal-eliminar-formContacto" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar formulario de contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro desea eliminar el formulario de contacto?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion -->
+    <!-- Modal edicion foto perfil-->
     <div class="modal fade" id="modal-edicion-foto-perfil" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1281,26 +1149,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-primary">Guardar cambios</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal borrar -->
-    <div class="modal fade" id="modal-borrar-foto-perfil" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar foto de perfil</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Estás seguro que deseas eliminar la foto de perfil?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -1338,28 +1186,7 @@
         </div>
     </div>
 
-    <!-- Modal eliminar nombre y cargo -->
-    <div class="modal fade" id="modal-borrar-nombre-cargo" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de nombre y cargo
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro deseas eliminar el contenido de nombre y cargo?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal edicion campo Sobre Mí -->
+    <!-- Modal edicion Sobre Mí -->
     <div class="modal fade" id="modal-editar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1387,26 +1214,122 @@
         </div>
     </div>
 
-    <!-- Modal eliminar campo Sobre Mí -->
-    <div class="modal fade" id="modal-eliminar-sobre-mi" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
+    <!-- Modal de medios de contacto -->
+    <div class="modal fade" id="modal-medios-contacto" tabindex="-1" role="dialog"
+        aria-labelledby="modal-medios-contacto-titulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar contenido de resumen</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="modal-medios-contacto-titulo">Agregar medio de
+                        contacto</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                    ¿Seguro deseas eliminar el contenido del campo "Sobre Mí"?
+                    <p>Selecciona el medio de contacto que deseas agregar:</p>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#modal-agregar-correo">Correo
+                            electrónico</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#modal-agregar-telefono">Teléfono</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#modal-agregar-red-social">Red
+                            social</button>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal para agregar correo electrónico -->
+    <div class="modal fade" id="modal-agregar-correo" tabindex="-1" role="dialog"
+        aria-labelledby="modal-agregar-correo-titulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-agregar-correo-titulo">Agregar correo
+                        electrónico</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Agregar correo electrónico aquí:</p>
+                    <input type="email" class="form-control" placeholder="Correo electrónico">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para agregar número de teléfono -->
+    <div class="modal fade" id="modal-agregar-telefono" tabindex="-1" role="dialog"
+        aria-labelledby="modal-agregar-telefono-titulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-agregar-telefono-titulo">Agregar número de
+                        teléfono</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Agregar número de teléfono aquí:</p>
+                    <input type="tel" class="form-control" placeholder="Número de teléfono">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para agregar red social -->
+    <div class="modal fade" id="modal-agregar-red-social" tabindex="-1" role="dialog"
+        aria-labelledby="modal-agregar-red-social-titulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-agregar-red-social-titulo">Agregar red social
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="twitter">Twitter</label>
+                                <input type="text" class="form-control" id="twitter" name="twitter"
+                                    placeholder="Ingrese su usuario de Twitter">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="facebook">Facebook</label>
+                                <input type="text" class="form-control" id="facebook" name="facebook"
+                                    placeholder="Ingrese su usuario de Facebook">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -1416,4 +1339,5 @@
     <!-- Script FontAwesome -->
     <script src="https://kit.fontawesome.com/5d179d390c.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
